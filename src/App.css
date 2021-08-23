@@ -2,37 +2,31 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content{
+  margin: 0 auto;
+  overflow: auto;
+  margin-top: 40px;
+  margin-left: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-contextmenu-wrapper{
+  flex: 0 0 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.react-contextmenu{
+  display: inline-block;
+  width: 100px;
+  background: white;
+  border: 1px solid gray;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.react-contextmenu-item{
+  padding: 4px;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-contextmenu-item:hover{
+  background-color: gray;
 }

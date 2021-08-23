@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Sheet from './components/Sheet'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () =>
+  (<div className='main-content'>
+    <h1> Spreadsheet </h1>
+    <Sheet row={4} column={4} />
+  </div>)
 
-export default App;
+export default App
